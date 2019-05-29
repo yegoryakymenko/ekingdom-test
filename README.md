@@ -1,1 +1,1 @@
-https://yegoryakymenko.github.io/paypop-test/dist/
+https://yegoryakymenko.github.io/ekingdom-test/dist
