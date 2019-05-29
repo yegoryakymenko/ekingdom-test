@@ -18,7 +18,10 @@
                 <div class="thermo">
                     <img class="thermo-shape" src="img/thermo-shape.svg" alt="thermo">
                     <img class="thermo-shape__shadowed" src="img/thermo-shadowed.svg" alt="">
-                    <img class="thermo-progress" src="img/thermo-progress.svg" alt="">
+                    <div class="test">
+                        <img class="thermo-progress" src="img/thermo-progress.svg" alt="">
+                    </div>
+
                     <p class="thermo-percent percent-1">1%</p>
                     <p class="thermo-percent percent-3">0.5%</p>
                     <p class="thermo-percent percent-4">0.25%</p>
@@ -31,7 +34,9 @@
                             <p class="float-holder__percent">0.75%</p>
                         </div>
                     </div>
+
                 </div>
+
             </div>
             <div class="main-right">
                 <div class="main-text">
@@ -134,13 +139,10 @@
     $('.percent-green').each(function() {
         var $this = $(this),
             countTo = $this.attr('data-count');
-
         $({ countNum: $this.text()}).animate({
                 countNum: countTo
             },
-
             {
-
                 duration: 500,
                 easing:'linear',
                 step: function() {
@@ -150,12 +152,8 @@
                     $this.text(this.countNum+ "%");
                     //alert('finished');
                 }
-
             });
-
-
-
     });
 </script>
 </body>
-</html>
+</html> 
